@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body{
+   background-image:url(20241028_125037.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    position:relative;
+    max-width:600px;
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;   
+    left: -100%;
+    animation: slideIn 1s forwards;
+}
+@keyframes slideIn {
+    from {
+        left: -100%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+body{
+    margin:0;
+    font-family: Arial,sans-serif;
+    max-width:600px;
+     }
+   .nav-container {
+      background-color: transparent;      
+      width: 100%;
+      padding: 1px;
+      box-shadow: 0 1px 8px black ;
+    }
+
+    .nav-content {
+      max-width: 1200px;
+      margin: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      padding-left:20px;
+      padding-bottom:80px;
+      width:200px;
+      height:2px;
+      border-radius:50px;
+    }
+    .logo h4 {
+    color:rgb(221, 209, 194);
+    width:201px;
+    height:41px;
+    font-weight:20px;
+    border-radius:13px;
+    border-color:white;
+    background-color: transparent;
+    stroke-width:1px;  
+    stroke-color:white;
+   font-family: 'Georgia', serif;
+   box-shadow: 0 1px 10px black inset;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: opacity 1s;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.8;
+      border-rasiud:30px;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius:10px;
+      border-color: white;
+      stroke-width:1px;
+      box-shadow: 0 1px 8px black inset;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      display: block;
+      border-radius: 20px;
+      box-shadow: 0 1px 8px gold;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+        width: 20%;
+        position: absolute;
+        top: 70px;
+        left: 285;
+        background: grey;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius:20px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+    } 
+
+h2{
+    color: rgb(235, 230, 230);
+    text-align: center;
+    font-family: 'Georgia', serif;
+    
+    }
+
+p{
+    color: rgb(235, 230, 230);   
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+li{
+    color: rgb(214, 212, 215);
+    text-align: center;
+}
+h1{
+    color:  rgb(221, 209, 194);
+    text-align: center;  
+    font-family: 'Georgia', serif;
+}
+.header{
+    width: 100;
+    height:60 ;
+    background-color: rgb(89, 143, 189);
+}
+a{
+    color: rgb(90, 213, 108);
+}
+p{
+    max-width: 600;
+    margin: 10px;
+    line-height: 1.6;
+    padding: 10px;
+    position: relative;
+    font-family: 'Georgia', serif;
+}
+h4{
+  color: #f7f4f4;
+  text-align: center;  
+  font-family: 'Georgia', serif;
+}
+.list{
+   text-align: center;
+   font-family: 'Georgia', serif;
+}
+hr{
+    border: none;
+    height: 3px;
+    background-color: #a9a3a3;
+    margin: 20px;
+    box-shadow: 0 1px 8px black;
+    border-radius:20px;
+}
+.vertical-line{
+    border-left: 3px solid #a9a3a3;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+}
+
+button{
+    background-color: transparent;
+    border-radius: 50px;
+    border-color: rgb(239, 232, 232);
+    color: aliceblue;
+    font-size: 15px;
+    margin-left: 150px;
+    padding: 10px;
+    stroke-width: 1px;
+    text-align: center;
+    box-shadow: 0 1px 10px gold inset;
+}
+button:hover{
+    background-color: #f7efef;
+    color: black;
+    box-shadow: 0 4px 8px black;
+}
+.card-container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 10px;
+   padding: 10px;
+}
+.card{
+    width: 120px;
+    height: 268px;
+    background-color: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 5px;
+    padding: 8px;
+}
+.card img{
+   width:100%;
+   height:auto;
+   display: block;
+   border-radius:20px;
+    box-shadow: 0 4px 8px grey;
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+.card img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); 
+}
+.card-content{
+    padding: 2px;  
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+    color:white;
+    text-align:center;
+}
+.icons{
+    color: #a9a3a3;
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+}
+.fa-tiktok{
+    color: aliceblue;
+    font-size: 20px;
+    padding:10px ;
+    box-shadow: 0 1px 10px gold inset;
+    boder-radius:20px;
+}
+.fa-tiktok:hover{
+    background-color: #f7efef;
+    color: black;
+}
+.fa-instagram{
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 0 1px 10px gold inset;
+}
+.fa-instagram:hover{
+    background-color: #f7efef;
+    color: black;
+}
+.fa-whatsapp{
+    color: white;
+    font-size: 20px;
+    padding:10px;
+    box-shadow: 0 1px 10px gold inset;
+}
+.fa-whatsapp:hover{
+    background-color: #f7f4f4;
+    color: black;
+}
+.wlcm{
+	padding-top:60px;
+	}
+	.countdown {
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 2px;
+      padding-botton:5px;
+    }
+    .time-unit {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 2px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 0 40px rgba(255, 255, 255, 0.3);
+    }
+    .time-unit span {
+      display: block;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #ffde59;
+      text-shadow: 0 0 10px #ffde59, 0 0 20px #ffde59, 0 0 40px #ffde59;
+      animation: glow 1.5s ease-in-out infinite;
+    }
+    @keyframes glow {
+      0%, 100% {
+        text-shadow: 0 0 10px #ffde59, 0 0 20px #ffde59, 0 0 40px #ffde59;
+      }
+      50% {
+        text-shadow: 0 0 20px #ffde59, 0 0 40px #ffde59, 0 0 80px #ffde59;
+      }
+    }
